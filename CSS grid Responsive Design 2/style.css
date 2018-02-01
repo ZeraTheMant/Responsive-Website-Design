@@ -1,0 +1,64 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 1em;
+	margin: 0;
+	font-family: arial;
+	background: #ff7373;
+	color: white;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.grid > *{
+	padding: 1em;
+}
+.brand, .heading > *{
+	text-align: center;
+}
+.heading{
+	background-color: #a60000;
+}
+.content{
+	background: #ff4040;
+}
+.content form p{
+	margin: 0;
+}
+.content form label{
+	display: block;
+}
+.content form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
+.full{
+	grid-column: 1/3;
+}
+.content form input, .content form textarea, .content form button{
+	padding: 1em;
+	width: 100%;
+}
+h3{
+	margin-top: 0;
+}
+button{
+	background: #ff7373;
+	border: 0;
+	color: white;
+}
+button:hover{
+	background-color: #a60000;
+}
+@media(min-width: 700px){
+	.grid{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	.brand, .heading > *{
+		text-align: left;
+	}
+}

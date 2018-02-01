@@ -1,0 +1,186 @@
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	line-height: 1.6em;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+.highlight{
+	color: #e8491d;
+}
+
+header #navbar a:hover{
+	color: #e8491d;
+	padding-bottom: 3px;
+	border-bottom: #e8491d 3px solid;
+}
+header{
+	background: #35424a;
+	border-bottom: #e8491d 3px solid;
+	color: white;
+	padding-top: 20px;
+	min-height: 70px;
+}
+
+h1{
+	margin: 0;
+}
+#navbar dl dt{
+	display: inline;
+	padding: 0 20px;
+}
+#navbar dl dt a{
+	color: white;
+	text-decoration: none;
+}
+#navbar dl dt a.current{
+	color: #e8491d;
+	padding-bottom: 3px;
+	border-bottom: #e8491d 3px solid;
+}
+.grid{
+	text-align: center;
+}
+#showcase{
+	color: white;
+	background: url(./img/showcase.jpg) no-repeat 0px -400px;
+	min-height: 400px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+#showcase h1{
+	font-size: 30px;
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+#showcase p{
+	font-size: 17px;
+}
+#newsletter{
+	background: #35424a;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+#newsletter form input{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	height: 35px;
+}
+.button{
+	border: 0;
+	width: 100%;
+	display: block;
+	color: white;
+	background-color: #e8491d;
+	height: 35px;
+}
+#content{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.box{
+	text-align: center;
+}
+.box img{
+	width: 90px;
+}
+footer{
+	background-color: #e8491d;
+	color: white;
+	text-align: center;
+	min-height: 40px;
+	font-size: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+footer p{
+	margin-top: 20px;
+}
+#about-page{
+	padding-bottom: 20px;
+}
+#about-right{
+	color: white;
+	padding: 15px;
+	background-color: #35424a;
+}
+#services{
+	padding-bottom: 30px;
+}
+#services #services-left dt{
+	background: #e6e6e6;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+#services #contact-form{
+	color: white;
+	padding: 15px;
+	background-color: #35424a;
+}
+#services #contact-form input, #services #contact-form textarea, #services #contact-form button{
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+/* media queries */
+@media(min-width: 768px){
+	header .grid, #newsletter .grid{
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	#content .grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1.5em;
+	}
+	#about-page .grid, #services .grid{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		text-align: justify;
+	}
+	#about-page #about-right, #services #contact-form{
+		margin-top: 20px;
+		margin-left: 50px;
+	}
+	#services #contact-form{
+		height: 350px;
+	}
+	#newsletter form{
+		float: right;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: 5px;
+	}
+	#newsletter form input{
+		width: 250px;
+	}
+	#newsletter form button{
+		display: inline;
+		width: initial;
+	}
+	#navbar dl{
+		text-align: right;
+	}
+	header h1, #navbar dl dt{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	#showcase h1{
+		font-size: 55px;
+		padding-top: 100px;
+		padding-bottom: 10px;
+		line-height: 1.5em;
+	}
+	#showcase p{
+		font-size: 20px;
+	}
+}
